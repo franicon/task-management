@@ -1,0 +1,13 @@
+name: Actions
+
+on:
+  branch:
+    "main"
+
+jobs:
+  run-npm-install:
+    runs-on: node
+    steps:
+      - name: Install node
+        run: npm install
+
