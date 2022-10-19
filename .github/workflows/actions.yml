@@ -1,12 +1,11 @@
 name: Actions
 
 on:
-  branch:
-    "main"
+  [push]
 
 jobs:
   run-npm-install:
-    runs-on: node
+    runs-on: Node
     steps:
       - name: Install node
         run: npm install
