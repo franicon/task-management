@@ -5,7 +5,7 @@ on:
 
 jobs:
   run-npm-install:
-    runs-on: Node
+    runs-on: ubuntu-latest
     steps:
       - name: Install node
         run: npm install
