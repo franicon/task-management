@@ -1,12 +1,16 @@
 name: Actions
 
 on:
-  [push]
+  push:
+    branches:
+      - main
 
 jobs:
   run-npm-install:
-    runs-on: node-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Install node
-        run: npm install
+        run: |
+          pwd
+          ls
 
