@@ -1,9 +1,9 @@
-import { Task } from "./task.entity";
-import { TaskStatusEnum } from "./enum";
-import { CreateTaskDto, FilterDto } from "./dto";
-import { InjectRepository } from "@nestjs/typeorm";
-import { DeleteResult, Repository } from "typeorm";
-import { Injectable, NotFoundException } from "@nestjs/common";
+import { Task } from './task.entity';
+import { TaskStatusEnum } from './enum';
+import { CreateTaskDto, FilterDto } from './dto';
+import { InjectRepository } from '@nestjs/typeorm';
+import { DeleteResult, Repository } from 'typeorm';
+import { Injectable, NotFoundException } from '@nestjs/common';
 
 @Injectable()
 export class TasksService {

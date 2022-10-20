@@ -3,7 +3,7 @@ import { TasksService } from './tasks.service';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { TasksController } from './tasks.controller';
 import { TaskRepository } from './task.repository';
-import { Task } from "./task.entity";
+import { Task } from './task.entity';
 
 @Module({
   imports: [TypeOrmModule.forFeature([Task])],
